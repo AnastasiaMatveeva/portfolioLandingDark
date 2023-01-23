@@ -1,0 +1,32 @@
+
+.about{
+    padding: 119px 10px;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        @media(max-width:1350px){
+            justify-content: center;
+        }
+    }
+    &-img{
+        width: 580px;
+
+        @media(max-width:590px){
+            width: 100%;
+        }
+    }
+    &-content {
+        width: 682px;
+
+        @media(max-width:768px){
+            width: 100%;
+        }
+        
+    }
+    &-text{
+        margin: 29px 0 55px;
+    }
+}

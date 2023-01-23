@@ -1,0 +1,56 @@
+
+.experience {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    
+    @media (max-width:1350px) {
+        padding: 0 10px;
+    }
+    &-block {
+        width: 416px;
+        background-color: rgba(56, 62, 69, 0.44);
+        background-repeat: no-repeat;
+        background-position: left 30px center;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        text-align: center;
+        padding: 25px 0;
+
+        &:hover {
+            background-color: var(--bg-orange);
+
+            .experience-number, 
+            .experience-text {
+                color: var(--color-black);
+
+            }
+        }
+
+        @media(max-width: 450px) {
+            width: 100%;
+            background-size: 15%;
+            background-position: left 10px center;
+        }
+
+    }
+
+    &-number {
+        font-family: var(--ff-inter);
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        color: var(--color-orange);
+        transition: color 0.3s ease-in-out;
+       
+    }
+    &-text {
+        font-family: var(--ff-inter);
+        font-size: 16px;
+        line-height: 31px;
+        font-weight: 700;
+        transition: color 0.3s ease-in-out;
+    }
+}

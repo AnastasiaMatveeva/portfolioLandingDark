@@ -1,0 +1,36 @@
+.header {
+    padding: 17px 0;
+    height: 100px;
+
+    @media (max-width:1350px) {
+        padding: 17px 10px;
+    }
+
+    &-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        background: var(--bg-dark);
+        padding: 17px 10px;
+    }
+
+    .nav {
+        @media (max-width: 850px) {
+            position: absolute;
+            left: 100%;
+            right: 0;
+            bottom: 0;
+            top: 85px;
+            overflow-x: hidden;
+            transition: 0.4s linear;
+            background: var(--bg-dark);
+            height: 100vh;
+
+            &.active {
+                left: 0;
+            }
+        }
+    }
+}

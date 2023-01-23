@@ -1,0 +1,50 @@
+
+.hero {
+    padding: 89px 10px 136px;
+
+    &-subtitle {
+        text-align: center;
+        font-family: var(--ff-inter);
+        font-size: 32px;
+        line-height: 51px;
+        font-weight: 700;
+
+        @media(max-width: 450px) {
+            font-size: 28px;
+            line-height: 45px;
+        }
+
+        span {
+            color: var(--color-orange);
+        }
+    }
+
+    &-title {
+        font-family: var(--ff-inter);
+        font-size: 48px;
+        line-height: 91px;
+        font-weight: 700;
+        text-align: center;
+
+        @media(max-width: 450px) {
+            font-size: 36px;
+            line-height: 50px;
+        }
+    }
+
+    &-text {
+        text-align: center;
+        margin: 25px 0 22px;
+
+    }
+
+    &-img {
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 210px;
+            width: 210px;
+        }
+    }
+}
