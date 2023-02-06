@@ -3,6 +3,8 @@ import React, {useState, useRef, useEffect} from "react";
 import logo from "../../images/logo.svg";
 import "./Navbar.scss";
 import ScrollIntoView from 'react-scroll-into-view';
+import pdf from '../../documents/resume.pdf';
+
 
 
 const Navbar = () => {
@@ -40,7 +42,7 @@ const Navbar = () => {
         {navLinks.map((nav) => renderNavLink(nav))}
     </ul>
     </nav>
-    <a href="" className="header-link">Hire me</a>
+    <a href={pdf} className="hire-link" download>Hire me</a>
     <button className="hamburger"
         onClick={()=>handleClick()}
     >
